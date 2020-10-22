@@ -1,23 +1,19 @@
 import React from 'react';
 import './App.css';
+import {PlanetCard} from "./components";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Start</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app min-vh-100 w-100 position-relative">
+      <Container fluid>
+        <Row>
+          <PlanetCard title='Nibiru'/>
+        </Row>
+
+      </Container>
+
     </div>
   );
 }
