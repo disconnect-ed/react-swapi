@@ -1,7 +1,7 @@
 import React from "react";
 import {Spinner} from "react-bootstrap";
 
-const CustomSpinner = () => (
+export const CustomSpinner = () => (
     <div className='spinner'>
         <div>
             <h3 className='spinner-title'>LOADING</h3>
@@ -9,5 +9,3 @@ const CustomSpinner = () => (
         </div>
     </div>
 )
-
-export default CustomSpinner

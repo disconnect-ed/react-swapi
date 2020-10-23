@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-const Pagination = ({changePage, prev, next }) => {
+export const Pagination = ({changePage, prev, next }) => {
 
     return (
         <div className='pagination m-auto pb-4'>
@@ -16,5 +16,3 @@ const Pagination = ({changePage, prev, next }) => {
         </div>
     )
 }
-
-export default Pagination
