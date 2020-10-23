@@ -1,7 +1,7 @@
 import React from "react";
 import {Table} from "react-bootstrap";
 
-export const ResidentsList = ({residents}) => (
+export const ResidentsList = React.memo(({residents}) => (
     <div className='residents'>
         <h3 className='text-center pt-4 pb-4'>Residents list</h3>
         <Table variant="dark" striped bordered hover>
@@ -24,4 +24,4 @@ export const ResidentsList = ({residents}) => (
             </tbody>
         </Table>
     </div>
-)
+))

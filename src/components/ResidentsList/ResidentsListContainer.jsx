@@ -16,7 +16,7 @@ export const ResidentsListContainer = ({list}) => {
 
     if (isLoading) return <Spinner className='m-auto' animation="border" variant="primary" />
 
-    if (!residents) return <h3 className='text-center'>Residents list null</h3>
+    if (!residents) return <h3 className='text-center'>The list of residents is empty</h3>
 
     return <ResidentsList residents={residents}/>
 }

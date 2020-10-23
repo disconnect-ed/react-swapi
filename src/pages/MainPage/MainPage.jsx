@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import {PlanetCardContainer} from "../../components/PlanetCard/PlanetCardContainer";
 import {Pagination} from "../../components/Pagination/Pagination";
 
-export const MainPage = ({response, changePage}) => (
+export const MainPage = React.memo(({response, changePage}) => (
     <div>
         <h1 className='pt-4 pb-4 text-center'>PLANET CARDS</h1>
         <Row>
@@ -21,4 +21,4 @@ export const MainPage = ({response, changePage}) => (
                     next={response.next}
         />
     </div>
-)
+))

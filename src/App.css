@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app:before {
-    position: absolute;
+    position: fixed;
     content: '';
     display: block;
     background-image: url("./images/bg.jpg");
@@ -59,11 +59,3 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
 }
-
-/*.next {*/
-/*    right: 0;*/
-/*}*/
-
-/*.prev {*/
-/*    left: 0;*/
-/*}*/
