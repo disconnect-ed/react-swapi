@@ -1,3 +1,11 @@
+a:hover {
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
 .app:before {
     position: absolute;
     content: '';
@@ -13,3 +21,39 @@
     filter: blur(5px);
     z-index: -10;
 }
+
+.pagination {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-btn {
+    display: block;
+}
+
+.spinner {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.next {*/
+/*    right: 0;*/
+/*}*/
+
+/*.prev {*/
+/*    left: 0;*/
+/*}*/
