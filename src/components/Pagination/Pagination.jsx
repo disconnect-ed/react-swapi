@@ -1,17 +1,18 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 
 const Pagination = ({changePage, prev, next }) => {
 
     return (
         <div className='pagination m-auto pb-4'>
-            <button className='prev pagination-btn btn-primary'
+            <Button className='prev pagination-btn btn-primary'
                     onClick={() => changePage(prev)}
                     disabled={!prev}
-            >Prev</button>
-            <button className='prev pagination-btn btn-primary'
+            >Prev</Button>
+            <Button className='prev pagination-btn btn-primary'
                     onClick={() => changePage(next)}
                     disabled={!next}
-            >Next</button>
+            >Next</Button>
         </div>
     )
 }

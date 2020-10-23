@@ -1,16 +1,16 @@
 import {useState, useEffect} from 'react'
 
 export const useFetch = (url, initialValue, toggleLoading) => {
-    const [data, setData] = useState(initialValue)
+    const [result, setResult] = useState(initialValue)
 
     const getDataFromApi = async (url) => {
         toggleLoading(true)
         try {
             const res = await fetch(url)
             const data = await res.json()
-            setData(data)
+            setResult(data)
         } catch (e) {
-            console.log(e)
+            setResult(e)
         } finally {
             toggleLoading(false)
         }
@@ -20,5 +20,5 @@ export const useFetch = (url, initialValue, toggleLoading) => {
         getDataFromApi(url)
     }, [url])
 
-    return data
+    return result
 }
