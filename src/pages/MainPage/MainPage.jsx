@@ -27,6 +27,7 @@ const MainPage = () => {
                                    title={item.name}
                                    climate={item.climate}
                                    population={item.population}
+                                   url={item.url}
                 />
             })}
 
